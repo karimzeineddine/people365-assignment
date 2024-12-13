@@ -11,7 +11,7 @@
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repository-name.git
+   git clone https://github.com/karimzeineddine/people365-assignment
    cd repository-name
    dotnet restore
    dotnet run
