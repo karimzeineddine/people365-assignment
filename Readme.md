@@ -36,7 +36,8 @@
 - Contributions are welcome! To contribute to TodoApi:
   
 - Fork the repository.
-- Create a new branch (git checkout -b feature-branch).
+- Create a new branch
+  git checkout -b feature-branch
 - Make your changes and commit (git commit -m 'Add feature').
 - Push to the branch (git push origin feature-branch).
 - Open a pull request.
