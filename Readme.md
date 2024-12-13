@@ -25,18 +25,18 @@
 - Update a Todo: PUT http://localhost:5187/api/todoitems/{id} with JSON body { "Name": "Updated Todo", "IsComplete": true }
 - Delete a Todo: DELETE http://localhost:5187/api/todoitems/{id}
 
-## **Features**
-    - RESTful API using ASP.NET Core.
-    - SQLite database integration.
-    - Authentication with JSON Web Tokens (JWT).
-    - CRUD operations for Todo items.
-    - In-memory testing with unit tests.
+## **Features**:
+- RESTful API using ASP.NET Core.
+- SQLite database integration.
+- Authentication with JSON Web Tokens (JWT).
+- CRUD operations for Todo items.
+- In-memory testing with unit tests.
 
 ## **Contributing**
-  - Contributions are welcome! To contribute to TodoApi:
+- Contributions are welcome! To contribute to TodoApi:
   
-  -Fork the repository.
-  - Create a new branch (git checkout -b feature-branch).
-  - Make your changes and commit (git commit -m 'Add feature').
-  - Push to the branch (git push origin feature-branch).
-  - Open a pull request.
+- Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Make your changes and commit (git commit -m 'Add feature').
+- Push to the branch (git push origin feature-branch).
+- Open a pull request.
