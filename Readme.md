@@ -39,7 +39,7 @@
 2. Create a new branch:
    ```bash
    git checkout -b feature-branch
-2. Create a new branch:
+3. Make your changes and commit:
    ```bash
    git commit -m 'Add feature'
 3. Make your changes and commit:
