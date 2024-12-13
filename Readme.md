@@ -16,12 +16,12 @@
    dotnet restore
    dotnet run
 
-    **Usage**
-    TodoApi provides endpoints to manage todo items. Use tools like Postman or a REST client to interact with the API at http://localhost:5187.
+    **Usage**:
+   - TodoApi provides endpoints to manage todo items. Use tools like Postman or a REST client to interact with the API at http://localhost:5187.
 
-    Endpoints:
-    Get All Todos: GET http://localhost:5187/api/todoitems
-    Create a Todo: POST http://localhost:5187/api/todoitems with JSON body { "Name": "Todo", "IsComplete": false }
+   - Endpoints:
+   - Get All Todos: GET http://localhost:5187/api/todoitems
+   - Create a Todo: POST http://localhost:5187/api/todoitems with JSON body { "Name": "Todo", "IsComplete": false }
     Update a Todo: PUT http://localhost:5187/api/todoitems/{id} with JSON body { "Name": "Updated Todo", "IsComplete": true }
     Delete a Todo: DELETE http://localhost:5187/api/todoitems/{id}
 
