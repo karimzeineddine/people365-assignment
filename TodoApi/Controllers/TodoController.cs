@@ -13,21 +13,29 @@ public class TodoController : ControllerBase
     {
         _db = db;
     }
+
     // Get All Todo's
     [HttpGet]
     public async Task<IActionResult> GetTodos()
     {
+        // Fetch all todos from the SQLite database
         return Ok(await _db.Todos.ToListAsync());
     }
-    // Create a Todo 
+
+    // Create a Todo
     [HttpPost]
     public async Task<IActionResult> CreateTodo([FromBody] Todo todo)
     {
+        if (todo == null) return BadRequest("Invalid todo.");
+
         _db.Todos.Add(todo);
         await _db.SaveChangesAsync();
+
+        // Return the created todo and its location
         return CreatedAtAction(nameof(GetTodos), new { id = todo.Id }, todo);
     }
-    // update a todo by id
+
+    // Update a Todo by ID
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateTodo(int id, [FromBody] Todo updatedTodo)
     {
@@ -37,9 +45,11 @@ public class TodoController : ControllerBase
         todo.Name = updatedTodo.Name;
         todo.IsComplete = updatedTodo.IsComplete;
         await _db.SaveChangesAsync();
+
         return NoContent();
     }
-    // delete a todo by id
+
+    // Delete a Todo by ID
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteTodoItem(int id)
     {
@@ -48,6 +58,7 @@ public class TodoController : ControllerBase
 
         _db.Todos.Remove(todo);
         await _db.SaveChangesAsync();
+
         return NoContent();
     }
 }
