@@ -42,9 +42,6 @@
 3. Make your changes and commit:
    ```bash
    git commit -m 'Add feature'
-3. Make your changes and commit:
-   ```bash
-  git commit -m 'Add feature'
 4. Push to the branch:
    ```bash
    git push origin feature-branch
